@@ -4,13 +4,13 @@ export default class ResolutionSingle extends Component{
 
     toggleChecked(){
         console.log(this);
-        Meteor.call('toggleResolution',this.props.resolution._id,this.props.resolution.complete);
+        Meteor.call('toggleResolution',this.props.resolution);
     }
 
 
     deleteResolution(){
         console.log(this);
-        Meteor.call('deleteResolution',this.props.resolution._id);
+        Meteor.call('deleteResolution',this.props.resolution);
     }
 
     render(){

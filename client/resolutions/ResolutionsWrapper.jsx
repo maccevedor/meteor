@@ -9,11 +9,7 @@ export default class ResolutionsWrapper extends TrackerReact(React.Component){
 
     constructor(){
         super();
-        this.state = {
-            subscriptions: {
-                resolutions: Meteor.subscribe("allResolutions")
-            }
-        }
+        this.state = { subscriptions: { resolutions: Meteor.subscribe("userResolutions") } };
     }
 
     componentWillUnmount(){

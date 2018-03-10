@@ -26,3 +26,5 @@ ultimatejs:tracker-react@=1.0.0
 stolinski:stylus-multi 
 #check
 #ejson
+accounts-ui
+accounts-password
