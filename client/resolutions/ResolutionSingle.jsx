@@ -25,7 +25,8 @@ export default class ResolutionSingle extends Component{
                 checked={this.props.resolution.complete}
                 onClick={this.toggleChecked.bind(this)}
             />
-            {this.props.resolution.text}
+            <a href={`/resolutions/${this.props.resolution._id}`}>{this.props.resolution.text}</a>
+            
             {status}
             {this.props.resolution.complete.toString()}
             <button className="btn-cancel" onClick={this.deleteResolution.bind(this)}>
