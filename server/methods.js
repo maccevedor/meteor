@@ -17,10 +17,11 @@ Meteor.methods({
             if (Meteor.userId() !== resolution.user) {
               throw new Meteor.Error("not-autorized");
             }
-        Resolutions.update(resolution._id,{
-            $set: {complete: !resolution.complete}
-        });
-    },
+            Resolutions.update(resolution._id,{
+                $set: {complete: !resolution.complete}
+            });
+        }
+    },        
     deleteResolution(resolution){
         check(resolution, Object);
             if (Meteor.userId() !== resolution.user) {
